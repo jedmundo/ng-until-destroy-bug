@@ -1,0 +1,15 @@
+{
+  "/ngapimock/*": {
+    "target": "http://localhost:5554",
+    "secure": false,
+    "logLevel": "info"
+  },
+  "/streams/*": {
+    "target": "http://localhost:5554",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/streams": ""
+    }
+  }
+}

@@ -8,7 +8,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start": "concurrently --kill-others \"npm run ng serve\" \"./node_modules/.bin/nodemon -w mocking -e ts,js,json -x npm run mockserver\"",
-    "mockserver": "rm -rf build; ts-node -r tsconfig-paths/register --project mocking/tsconfig.json --files mocking/generator/run-mocking.ts"
+    "mockserver": "rm -rf build; ts-node --project mocking/tsconfig.json --files mocking/generator/run-mocking.ts"
   },
   "private": true,
   "dependencies": {

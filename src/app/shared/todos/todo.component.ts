@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { FormControl } from '@angular/forms';
+import { Todo } from './todo.model';
 
 @UntilDestroy()
 @Component({
@@ -12,6 +13,7 @@ import { FormControl } from '@angular/forms';
 })
 export class TodoComponent implements OnInit {
   inputControl = new FormControl();
+  todo: Todo;
 
   ngOnInit(): void {
     this.inputControl.valueChanges

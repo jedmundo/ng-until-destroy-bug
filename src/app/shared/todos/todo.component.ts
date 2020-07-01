@@ -3,11 +3,13 @@ import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { FormControl } from '@angular/forms';
 import { Todo } from './todo.model';
 
+console.log('HERE');
+
 @UntilDestroy()
 @Component({
   selector: 'app-todo-component',
   template: `<div>
-    <h1>Hi</h1>
+    <h1>Todo input</h1>
     <input [formControl]="inputControl" />
   </div>`,
 })
